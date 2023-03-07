@@ -25,7 +25,7 @@ const PlacesNavigator = () => {
         name="Places"
         component={PlaceListScreen}
         options={({ navigation }) => ({
-          title: "Tomar Foto",
+          title: "Contacto",
           headerRight: () => (
             <TouchableOpacity
               style={{ marginRight: 0 }}

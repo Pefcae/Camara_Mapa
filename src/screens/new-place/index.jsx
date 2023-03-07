@@ -34,7 +34,7 @@ const NewPlace = ({ navigation }) => {
         <Text style={styles.title}>Foto</Text>
         <TextInput
           style={styles.input}
-          placeholder="Escribe el nombre de la foto"
+          placeholder="Escribe la duda que tengas"
           onChangeText={onHandlerChange}
           value={title}
         />

@@ -15,12 +15,18 @@ const PlaceList = ({ navigation }) => {
   );
   const keyExtractor = (item) => item.id;
   return (
+    <View style={styles.container}>
+      
+      <Text style={styles.parrafo}>
+       Saca una foto de tu planta o Compostera que tengas dudas y te contactaremos
+      </Text>
     <FlatList
       data={places}
       style={styles.container}
       keyExtractor={keyExtractor}
       renderItem={renderItem}
     />
+    </View>
   );
 };
 
