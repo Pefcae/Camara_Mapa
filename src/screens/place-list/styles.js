@@ -1,15 +1,16 @@
 import { StyleSheet } from "react-native";
-import colors from "../../utils/colors";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  
-  parrafo: {
-    backgroundColor: colors.background,
+  emptyContainer: {
+    marginVertical: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  emptyText: {
     fontSize: 18,
-    color: colors.gray,
-    textAlign: 'center',
+    fontWeight: "bold",
   },
 });

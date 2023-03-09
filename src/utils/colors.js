@@ -1,3 +1,4 @@
+
 export default {
   primary: "#5F5980",
   secondary: "#2F3061",
