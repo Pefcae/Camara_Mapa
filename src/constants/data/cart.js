@@ -1,0 +1,48 @@
+export const CART = [
+  {
+    id: 1,
+    categoryId: 1,
+    title: 'Semilla de planta',
+    description: 'Semillas para plantar Oregano, tomillo, laurel, etc',
+    weight: '400gr',
+    price: 600,
+    quantity: 2,
+  },
+  {
+    id: 2,
+    categoryId: 1,
+    title: 'Semilla de flores',
+    description: 'Semillas para plantar flores con el compost que realices',
+    weight: '400gr',
+    price: 800,
+    quantity: 3,
+  },
+  {
+    id: 3,
+    categoryId: 2,
+    title: 'Compostera básica',
+    description: 'Compostera de un nivel, hecha con materiales reciclados',
+    weight: '400gr',
+    price: 600,
+    quantity: 2,
+  },
+  {
+    id: 4,
+    categoryId: 3,
+    title: 'Chipeado',
+    description: 'Conjunto de ramas y hojas secas para poner en la compostera',
+    weight: '400gr',
+    price: 800,
+    quantity: 3,
+  },
+  {
+    id: 5,
+    categoryId: 4,
+    title: 'Bolsa verde',
+    description: 'Bolsa de residuo para diferenciar los residuos reciclables',
+    weight: '400gr',
+    price: 600,
+    quantity: 2,
+  },
+
+];

@@ -1,12 +1,9 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
+import Ionicons from "@expo/vector-icons/Ionicons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import React from "react";
-import { Platform, TouchableOpacity } from "react-native";
 import { useSelector } from "react-redux";
 
+//crear para tener el tabs navigation (botones de abajo)
 import { THEME } from "../constants/theme";
-import { MapsScreen, NewPlaceScreen, PlaceDetailScreen, PlaceListScreen } from "../screens/index";
 import CartNavigator from "./cart";
 import EcoPointsNavigator from "./ecoPoints";
 import EventsNavigator from "./events";
@@ -15,7 +12,9 @@ import ShopNavigator from "./shop";
 
 const BottomTab = createBottomTabNavigator();
 
-const PlacesNavigator = () => {
+const Tabs = () => {
+  const cart = useSelector((state) => state.cart.items);
+
   return (
     <BottomTab.Navigator
       initialRouteName="HomeTab"
@@ -73,7 +72,7 @@ const PlacesNavigator = () => {
               color={THEME.colors.primary}
             />
           ),
-          tabBarBadge: 9,
+          tabBarBadge: cart.length,
           tabBarBadgeStyle: {
             backgroundColor: THEME.colors.secondary,
             color: THEME.colors.text,
@@ -114,4 +113,4 @@ const PlacesNavigator = () => {
   );
 };
 
-export default PlacesNavigator;
+export default Tabs;
